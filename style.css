@@ -107,7 +107,7 @@ body {
     transform: scale(1.05);
 }
 
-/* --- Catálogo (AQUÍ ESTÁ LA CORRECCIÓN DE LA FOTO) --- */
+/* --- Catálogo --- */
 .container {
     padding: 60px 5%;
     max-width: 1200px;
@@ -154,22 +154,22 @@ body {
     box-shadow: 0 15px 30px rgba(0,0,0,0.15);
 }
 
-/* Ajuste para que la XTZ y todas se vean perfectas */
+/* ARREGLO PARA FONDO NEGRO UNIFORME */
 .moto-img {
     width: 100%;
     height: 250px;
-    background-color: #fff;
+    background-color: #000000; /* Fondo negro absoluto para unificar las fotos */
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px;
+    padding: 10px;
     overflow: hidden;
 }
 
 .moto-img img {
     max-width: 100%;
     max-height: 100%;
-    object-fit: contain; /* Esto evita que se corte la moto */
+    object-fit: contain; /* Mantiene la moto completa sin cortes */
     transition: transform 0.5s ease;
 }
 
@@ -231,7 +231,7 @@ body {
     transform: scale(1.1) rotate(10deg);
 }
 
-/* --- Footer con Identidad Vibras Positivas --- */
+/* --- Footer --- */
 footer {
     background: var(--black);
     color: white;
@@ -269,6 +269,6 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
-    .nav-links { display: none; } /* En móviles podrías añadir un menú hamburguesa luego */
+    .nav-links { display: none; }
     .hero h1 { font-size: 2.5rem; }
 }
